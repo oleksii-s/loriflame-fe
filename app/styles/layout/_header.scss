@@ -1,0 +1,41 @@
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+  height: 345px;
+
+  .branding {
+
+    .brand-logo {
+      display: block;
+    }
+  }
+
+  .navigation {
+    position: relative;
+    height: 100%;
+
+    nav {
+      border-top: 1px solid #e5e5e5;
+      position: absolute;
+      bottom: 0;
+
+      li a {
+        @extend .blue-grey-text, .text-darken-4 !optional;
+
+        &:hover {
+          background-color: #ffffff;
+          box-shadow: inset 0px -3px 0px #00c853;
+        }
+      }
+    }
+  }
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}

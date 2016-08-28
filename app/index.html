@@ -20,42 +20,55 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header">
-      <div class="navbar navbar-default" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-
-            <a class="navbar-brand" href="#/">loriflame</a>
-          </div>
-
-          <div class="collapse navbar-collapse" id="js-navbar-collapse">
-
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/about">About</a></li>
-              <li><a ng-href="#/">Contact</a></li>
-            </ul>
-          </div>
-        </div>
+    <header class="header row">
+      <div class="branding col-md-4">
+        <a class="brand-logo" href="#/">
+          <img src="./images/loriflame.svg" class="responsive-img" alt="Loriflame" width="700">
+        </a>
       </div>
-    </div>
 
-    <div class="container">
-    <div ng-view=""></div>
-    </div>
+      <div class="navigation col-md-8">
+        <form>
+          <div class="input-group">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">
+                <span class="glyphicon glyphicon-search"></span>
+              </button>
+            </span>
+            <input type="text" class="form-control" placeholder="Search for...">
+          </div>
+        </form>
 
-    <div class="footer">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <nav class="collapse navbar-collapse" id="js-navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#/">ЛИЦО</a></li>
+            <li><a ng-href="#/about">МАКИЯЖ</a></li>
+            <li><a ng-href="#/">АРОМАТЫ</a></li>
+            <li><a href="#/">ДЛЯ ТЕЛА</a></li>
+            <li><a ng-href="#/about">ДЛЯ ВОЛОС</a></li>
+            <li><a ng-href="#/">АКСЕССУАРЫ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="container">
+      <div ng-view=""></div>
+    </section>
+
+    <footer class="footer">
       <div class="container">
         <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
       </div>
-    </div>
+    </footer>
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
